@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.starxin.fitness.activity.MainActivity">
+    <!--标题栏-->
+    <include layout="@layout/top_bar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"/>
+    <!--FragmentLayout-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcdcd"/>
+    <!--底部的RadioGroup-->
+    <RadioGroup
+        android:gravity="center_vertical"
+        android:id="@+id/rg_main"
+        android:padding="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <RadioButton
+            android:id="@+id/rb_run"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/bottom_textcolor_drawable_selector"
+            android:text="运动"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/rb_running_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/bottom_textcolor_drawable_selector"
+            android:text="发现"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/rb_find_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_club"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/bottom_textcolor_drawable_selector"
+            android:text="社区"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/rb_club_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_personal"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/bottom_textcolor_drawable_selector"
+            android:text="我"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/rb_personal_drawable_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

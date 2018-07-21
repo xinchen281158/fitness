@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/personal_back_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <ImageView
+        android:id="@+id/personal_head_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/personal_back_iv"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/personal_userline_iv"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/personal_userline_iv"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:text="张三"/>
+        <TextView
+            android:id="@+id/user_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/personal_userline_iv"
+            android:text="178"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.example.starxin.fitness.view.personal_item_view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@mipmap/shoucang"
+        zsg:show_text="我的收藏" />
+    <com.example.starxin.fitness.view.personal_item_view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@mipmap/lishi"
+        zsg:show_text="历史记录" />
+    <com.example.starxin.fitness.view.personal_item_view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@mipmap/xiazai"
+        zsg:show_text="信息录入" />
+    <com.example.starxin.fitness.view.personal_item_view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@mipmap/update"
+        zsg:show_text="版本更新" />
+    <com.example.starxin.fitness.view.personal_item_view
+        android:id="@+id/logOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@mipmap/about"
+        zsg:show_text="退出登录" />
+
+</LinearLayout>

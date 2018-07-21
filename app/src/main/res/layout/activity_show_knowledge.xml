@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.starxin.fitness.activity.ShowknowledgeActivity">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/knowledge_title_tb"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="#222224">-->
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/common_arraw_back_ic" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:src="@drawable/title_icon" />-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/wb_knowledge_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+
+        <ProgressBar
+            android:id="@+id/pb_show_activity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
+
